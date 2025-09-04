@@ -1,8 +1,92 @@
+body{
+    margin: 0px;
+} 
+
 div{
-    background-color: rgb(54,144,198)
+    background-color: rgb(54,144,198);
+    margin: auto;
 }
 
 
 h2{
     color:white;
+}
+
+.myButton {
+	background-color:#000000;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:16px 40px;
+	text-decoration:none;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+}
+
+.input {
+	font-size: 13px;
+	padding: 14px 15px;
+	width: 100%;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 0px solid #C4D1EB;
+	border-radius: 20px;
+	transition: .3s ease;
+}
+
+.input:focus {
+	background: #F2F2F2;
+	border: 0px solid #5A7EC7;
+	border-radius: 20px;
+}
+
+.input::placeholder {
+	color: #000000;
+}
+
+.custom_input2 {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+}
+
+.input2 {
+	font-size: 13px;
+	padding: 40px 17px;
+	width: 100%;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 0px solid #C4D1EB;
+	border-radius: 20px;
+	transition: .3s ease;
+}
+
+.input2:focus {
+	background: #F2F2F2;
+	border: 0px solid #5A7EC7;
+	border-radius: 20px;
+}
+
+.input2::placeholder {
+	color: #000000;
+}
+
+footer{
+     background-color: rgb(54,144,198);
 }
