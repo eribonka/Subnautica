@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Software</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <section class="about-section">
+        
+       <img class="image" src="19963.png">
+        
+        <div class="text-container">
+            <h2><span class="black-text">About</span> Software</h2>
+            <p id="manoParagrafas" style="min-height:365px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit.
+                 <span id="papildomasTekstas" class="hidden-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem ex, eligendi
+                 provident optio numquam ad accusantium doloremque odio amet harum commodi esse corrupti 
+                 porro eum blanditiis distinctio cum. Id!
+                </span>
+
+            </p>
+    <button onclick="pridetiTeksta()" id="mygtukas" class="read-more">read more </button>
+        </div>
+        <script>
+    function pridetiTeksta() {
+      const papildomas = document.getElementById("papildomasTekstas");
+      const mygtukas = document.getElementById("mygtukas");
+ 
+      if (papildomas.classList.contains("hidden-text")) {
+        papildomas.classList.remove("hidden-text");
+        mygtukas.textContent = "Show less";
+      } else {
+        papildomas.classList.add("hidden-text");
+        mygtukas.textContent = "Read more";
+      }
+    }
+  </script>
+    </section>
+
+    <section class="why-section">
+        <h2><span class="black-text">Why</span> Choose Us</h2>
+    </section>
+</body>
+</html>
