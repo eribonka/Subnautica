@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="how-it-works">
+    <div class="content">
+      <h2>How To <span>Works it</span></h2>
+      <p id="manoParagrafas" style="min-height: 202px;">
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece 
+        of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, 
+        a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+        Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word 
+        in classical literature, discovered
+        <span id="papildomasTekstas" class="hidden-text">
+          the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum 
+          et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise 
+          on the theory of ethics, very popular during the Renaissance.
+        </span>
+      </p>
+      <button onclick="pridetiTeksta()" id="myg tukas" class="mygtukas">read more </button>
+
+    <script>
+    function pridetiTeksta() {
+      const papildomas = document.getElementById("papildomasTekstas");
+      const mygtukas = document.getElementById("mygtukas");
+
+      if (papildomas.classList.contains("hidden-text")) {
+        papildomas.classList.remove("hidden-text");
+        mygtukas.textContent = "Show less";
+      } else {
+        papildomas.classList.add("hidden-text");
+        mygtukas.textContent = "Read more";
+      }
+    }
+  </script>
+    </div>
+    <div class="image">
+      <img src="Layer 5.png" alt="" width="800px" height="800px"/>
+    </div>
+  </section>
+</body>
+</html>
