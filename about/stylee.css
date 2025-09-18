@@ -46,7 +46,6 @@ p {
     text-decoration: none;
     transition: all 0.3s ease;
     margin-left: 598px;
-    margin-top: 170px;
     width: 125px;
     height: 34px;
 }
@@ -70,4 +69,113 @@ h2 {
 }
 .hidden-text{
     display: none;
+}
+.background{
+    background-image:url(ErnestCS.png) ; 
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+.container {
+   
+      display: flex;
+      max-width: 1000px;
+      width: 90%;
+      align-items: center;
+    }
+
+    
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+      color: #000;
+      font-size: 1.2rem;
+    }
+
+    .sidebar .active {
+      background: #000;
+      color: #fff;
+      padding: 8px 12px;
+      display: inline-block;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+
+    .content-card {
+      background: white;
+      flex: 3;
+      margin-left: 40px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .content-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .content-card h2 {
+      color: #2da8e0;
+      margin-bottom: 10px;
+    }
+
+    .content-card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    footer {
+    background-color: #333;
+    color: white;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .footer-address, footer .footer-links, footer .footer-follow, footer .footer-newsletter {
+    flex: 1;
+    margin: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+.end{
+    background-color:#0099cc ;
+    text-align: center;
+    padding: 20px;
 }
