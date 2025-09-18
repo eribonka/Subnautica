@@ -76,15 +76,56 @@ h2 {
     justify-content: center;
     padding: 80px;
 }
-.container {
-   
-      display: flex;
-      max-width: 1000px;
-      width: 90%;
-      align-items: center;
-    }
 
-    
+.container{
+display: flex;
+    height: 300px;
+    width: 800px;
+    margin: 50px auto;
+}
+.tabs {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tab {
+    padding: 20px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: background 0.3s, border-color 0.3s;
+  }
+  .tab:hover {
+    background: #111;
+  }
+  .tab.active {
+    background: black;
+    border-left: 4px solid #2e82d7;
+    font-weight: bold;
+  }
+  .content {
+    background: white;
+    color: black;
+    flex-grow: 1;
+    padding: 20px;
+    position: relative;
+  }
+  .content h3 {
+    color: #2e82d7;
+    margin-top: 0;
+  }
+  .content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .icon {
+    fill: #2e82d7;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+
     .sidebar {
       display: flex;
       flex-direction: column;
