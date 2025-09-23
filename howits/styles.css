@@ -12,6 +12,7 @@ body {
   padding: 60px 10%;
   flex-wrap: wrap;
   background-color: #fff;
+  margin: 5rem;
 }
 
 .content {
