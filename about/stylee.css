@@ -12,12 +12,15 @@ body {
     justify-content: center;
     padding: 50px 10%;
     gap: 50px;
+    color: #fafafa;
 }
 
 
 .image {
-    width: 550px;
-    height: 400px;
+  
+  height: 550px;
+  width: 550px;
+  margin-top: 100px;
 }
 
 .text-container {
@@ -71,7 +74,7 @@ h2 {
     display: none;
 }
 .background{
-    background-image:url(ErnestCS.png) ; 
+    background-image:url(../image/ErnestCS.png) ; 
     display: flex;
     justify-content: center;
     padding: 80px;
@@ -90,28 +93,28 @@ display: flex;
     justify-content: center;
   }
   .tab {
+    color: white;
     padding: 20px;
     cursor: pointer;
     border-left: 4px solid transparent;
-    transition: background 0.3s, border-color 0.3s;
+    transition: backgroun 0.3s, border-color 0.3s;
   }
-  .tab:hover {
-    background: #111;
-  }
+ 
   .tab.active {
-    background: black;
-    border-left: 4px solid #2e82d7;
+    
+    border-left: 4px solid rgb(255, 255, 255);
     font-weight: bold;
   }
   .content {
     background: white;
-    color: black;
+    color: rgb(255, 255, 255);
     flex-grow: 1;
     padding: 20px;
     position: relative;
   }
   .content h3 {
     color: #2e82d7;
+    text-align: center;
     margin-top: 0;
   }
   .content p {
@@ -123,6 +126,7 @@ display: flex;
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
+    text-align: center;
   }
 
 
@@ -219,4 +223,5 @@ footer p {
     background-color:#0099cc ;
     text-align: center;
     padding: 20px;
+    color: #fff;
 }

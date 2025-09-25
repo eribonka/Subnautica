@@ -6,8 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How It Works</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/contact/stylecontact.css">
+  <link rel="stylesheet" href="../about/header.css">
 </head>
 <body>
+  <nav class="navbar">
+ 
+    <div class="logo">
+      <i class="fas fa-tv"> <img src="../image/software.png" alt="" width="80px" height="70px">Potoub</i>
+  </div>
+ 
+    <div class="image-bg">
+    </div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+      <button class="btn-download">Download</button>
+      <a href="#">Login</a>
+    <div class="burger" id="burgerBtn">☰</div>
+     </div>
+    <div class="menu" id="menu">
+  <a href="../index.html">Home</a>
+  <a href="../about/indexone.html">About</a>
+  <a href="../howits/index2.html">Work</a>
+  <a href="../contact/indexcontact.html">Contact</a>
+    <script>
+  const burger = document.getElementById('burgerBtn');
+  const menu = document.getElementById('menu');
+ 
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+ 
+  window.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
+</div>
+  </nav>
+  
   <section class="how-it-works">
     <div class="content">
       <h2>How To <span>Works it</span></h2>
@@ -41,36 +79,47 @@
   </script>
     </div>
     <div class="image">
-      <img src="Layer 5.png" alt="" width="800px" height="800px"/>
+      <img src="../image/Layer 5.png" alt="" width="800px" height="800px"/>
     </div>
     </section>
   <footer>
     <div class="footer-address">
         <h3>Address</h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters...</p>
+        <p>It is a long established fact that<br>
+           a reader will be distracted by<br>
+            the readable content of a page<br>
+             when looking at its layout. The<br>
+             point of using Lorem Ipsum is<br>
+              that it has a more-or-less<br>
+               normal distribution of letters...</p>
     </div>
     <div class="footer-links">
         <h3>Links</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/indexone.html">About</a></li>
+            <li><a href="../howits/index2.html">Work</a></li>
+            <li><a href="../contact/indexcontact.html">Contact</a></li>
         </ul>
     </div>
     <div class="footer-follow">
         <h3>Follow Us</h3>
-        <a href="#"><img src="facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
-        <a href="#"><img src="twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
-        <a href="#"><img src="linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
-        <a href="#"><img src="youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
-        <a href="#"><img src="instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
+        <a href="#"><img src="../image/facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
+        <a href="#"><img src="../image/twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
+        <a href="#"><img src="../image/linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
+        <a href="#"><img src="../image/youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
+        <a href="#"><img src="../image/instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
     </div>
     <div class="footer-newsletter">
         <h3>Newsletter</h3>
         <input type="email" placeholder="Enter Your Email">
         <button>SUBSCRIBE</button>
-    </div>
+        </div>
 </footer>
+
+        <div class="end">
+    © 2019 All Rights Reserved. Free Website Templates
+
+    </div>
 </body>
 </html>

@@ -5,12 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Software</title>
     <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="../about/header.css">
+
+    
 </head>
 <body>
+  <nav class="navbar">
+ 
+    <div class="logo">
+      <i class="fas fa-tv"> <img src="../image/software.png" alt="" width="80px" height="70px">Potoub</i>
+     
+  </div>
+ 
+    <div class="image-bg">
+      <img src="../tnt/Rectangle 4.png">
+    </div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+      <button class="btn-download">Download</button>
+      <a href="#">Login</a>
+    </div>
+    <div class="burger" id="burgerBtn">☰</div>
+    <div class="menu" id="menu">
+  <a href="../index.html">Home</a>
+  <a href="../about/indexone.html">About</a>
+  <a href="../howits/index2.html">Work</a>
+  <a href="../contact/indexcontact.html">Contact</a>
     <script>
+  const burger = document.getElementById('burgerBtn');
+  const menu = document.getElementById('menu');
+ 
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+ 
+  // Закрытие меню при клике вне его
+  window.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
+</div>
+  </nav>
+ 
+    <section class="about-section">
+       
+       <img class="image" src="../image/19963.png">
+       
+        <div class="text-container">
+            <h2><span class="black-text">About</span> Software</h2>
+            <p id="manoParagrafas" style="min-height:365px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit.
+                 <span id="papildomasTekstas" class="hidden-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus autem ex, eligendi
+                 provident optio numquam ad accusantium doloremque odio amet harum commodi esse corrupti
+                 porro eum blanditiis distinctio cum. Id!
+                </span>
+ 
+            </p>
+    <button onclick="pridetiTeksta()" id="mygtukas" class="read-more">read more </button>
+        </div>
+     
+        <script>
+    function pridetiTeksta() {
+      const papildomas = document.getElementById("papildomasTekstas");
+      const mygtukas = document.getElementById("mygtukas");
+ 
+      if (papildomas.classList.contains("hidden-text")) {
+        papildomas.classList.remove("hidden-text");
+        mygtukas.textContent = "Show less";
+      } else {
+        papildomas.classList.add("hidden-text");
+        mygtukas.textContent = "Read more";
+      }
+    }
+  </script>
+    </section>
+ 
+    <section class="why-section">
+        <h2><span class="black-text">Why</span> Choose Us</h2>
+    </section>
+<section class="background">
+    <div class="container">
+  <div class="tabs">
+    <div class="tab active" data-tab="tab1">Easy to customize</div>
+    <div class="tab" data-tab="tab2">More flexible</div>
+    <div class="tab" data-tab="tab3">Clean mode</div>
+    <div class="tab" data-tab="tab4">Retinaready</div>
+  </div>
+  <div class="content" id="content">
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M5 3h14v2H5zM3 7h18v2H3zM5 11h14v6H5z" />
+    </svg>
+    <h3 style="text-align: center;">Ad Minim</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+</div>
+<script>
   const tabs = document.querySelectorAll('.tab');
   const content = document.getElementById('content');
-
+ 
   const contents = {
     tab1: {
       icon: '<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14v2H5zM3 7h18v2H3zM5 11h14v6H5z"/></svg>',
@@ -33,20 +133,21 @@
       text: 'Ensures that the visuals and UI elements are sharp and crisp on high resolution screens.'
     }
   };
-
+ 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('active'));
-      
+     
       tab.classList.add('active');
-
-      
+ 
+     
       const tabKey = tab.getAttribute('data-tab');
       const data = contents[tabKey];
       content.innerHTML = data.icon + `<h3>${data.title}</h3><p>${data.text}</p>`;
     });
   });
 </script>
+</section>
 </section>
 <footer>
     <div class="footer-address">
@@ -56,24 +157,29 @@
     <div class="footer-links">
         <h3>Links</h3>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/indexone.html">About</a></li>
+            <li><a href="../howits/index2.html">Work</a></li>
+            <li><a href="../contact/indexcontact.html">Contact</a></li>
         </ul>
     </div>
     <div class="footer-follow">
         <h3>Follow Us</h3>
-        <a href="#"><img src="facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
-        <a href="#"><img src="twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
-        <a href="#"><img src="linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
-        <a href="#"><img src="youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
-        <a href="#"><img src="instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
+        <a href="#"><img src="../image/facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
+        <a href="#"><img src="../image/twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
+        <a href="#"><img src="../image/linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
+        <a href="#"><img src="../image/youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
+        <a href="#"><img src="../image/instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
     </div>
     <div class="footer-newsletter">
-        <h3>Newsletter</h3>
         <input type="email" placeholder="Enter Your Email">
         <button>SUBSCRIBE</button>
+    </div>
+</footer>
+
+<div class="end">
+    © 2019 All Rights Reserved. Free Website Templates
+</div>
     </div>
 </footer>
 
