@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../contact/stylecontact.css">
+    <link rel="stylesheet" href="../about/header.css">
 </head>
 <body>
+    <nav class="navbar">
+ 
+    <div class="logo">
+      <i class="fas fa-tv"></i> Potoub
+     
+  </div>
+</header>
+ 
+ <div class="image-bg">
+      <img src="../tnt/Rectangle 4.png">
+    </div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+      <button class="btn-download">Download</button>
+      <a href="#">Login</a>
+    </div>
+    <div class="burger" id="burgerBtn">☰</div>
+    <div class="menu" id="menu">
+  <a href=".. /index.html">Home</a>
+  <a href="../about/indexone.html">About</a>
+  <a href="../howits/index2.html">Work</a>
+  <a href="../contact/indexcontact.html">Contact</a>
+    <script>
+  const burger = document.getElementById('burgerBtn');  
+  const menu = document.getElementById('menu');
+ 
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+ 
+  window.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
+</div> 
+  </nav>
+  
+  <!-- <section class="hero">
+  <div class="hero-text">
+    <h1 id="heroTitle">Get<br>Thinking<br>A long time</h1>
+    <p id="heroParagraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+    </p>
+    <button class="btn" id="readMoreBtn">Read More</button>
+ 
+    <div class="arrows">
+      <button class="circle-btn" id="prevBtn">&larr;</button>
+      <button class="circle-btn" id="nextBtn">&rarr;</button>
+    </div>
+  </div>
+ </nav>
+</section> --> 
+
+  <!-- <div class="hero-image">
+    <img src="../image/header photo.png" alt="illustration" id="heroImage">
+  </div> -->
+
 <div class="contact-form">
     <div class="form-container">
         <h2><span style="color: black;">Request</span> A call Back</h2>
@@ -32,7 +92,7 @@
         </form>
     </div>
     <div class="map">
-        <img src="image (1).png" alt="Map"  width="480" height="405
+        <img src="../image/image (1).png" alt="Map"  width="480" height="405
         ">
     </div>
 </div>
@@ -40,24 +100,30 @@
 <footer>
     <div class="footer-address">
         <h3>Address</h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters...</p>
+        <p>It is a long established fact that <br>
+           a reader will be distracted by <br>
+            the readable content of a page<br>
+             when looking at its layout. The<br>
+             point of using Lorem Ipsum is<br>
+              that it has a more-or-less<br>
+               normal distribution of letters...</p>
     </div>
     <div class="footer-links">
         <h3>Links</h3>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+             <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/indexone.html">About</a></li>
+            <li><a href="../howits/index2.html">Work</a></li>
+            <li><a href="../contact/indexcontact.html">Contact</a></li>
         </ul>
     </div>
     <div class="footer-follow">
         <h3>Follow Us</h3>
-        <a href="#"><img src="facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
-        <a href="#"><img src="twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
-        <a href="#"><img src="linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
-        <a href="#"><img src="youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
-        <a href="#"><img src="instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
+        <a href="#"><img src="../image/facebook-logo-button copy@4x.png" alt="" width="15" height="15">Facebook</a><br>
+        <a href="#"><img src="../image/twitter-logo-button@4x.png" alt="" width="15" height="15">Twitter</a><br>
+        <a href="#"><img src="../image/linkedin-logo-button@4x.png" alt="" width="15" height="15">LinkedIn</a><br>
+        <a href="#"><img src="../image/youtube@4x.png" alt="" width="15" height="15">Youtube</a><br>
+        <a href="#"><img src="../image/instagram-logo@4x.png" alt="" width="15" height="15">Instagram</a><br>
     </div>
     <div class="footer-newsletter">
         <input type="email" placeholder="Enter Your Email">

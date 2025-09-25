@@ -7,9 +7,9 @@ body {
     background-color: #0099cc;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 50px 25%;
+    padding: 50px 2%;
 }
 
 .contact-form h2 {
@@ -17,6 +17,8 @@ body {
 }
 
 .form-container {
+    max-width: 500px;
+    padding: 2rem;
     width: 50%;
 }
 
@@ -127,7 +129,7 @@ footer .footer-address, footer .footer-links, footer .footer-follow, footer .foo
 }
 
 footer p {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
 }
 .end{
