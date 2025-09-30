@@ -1,34 +1,42 @@
+  body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0px;
-  padding: 0px;
-  top: 0px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #00a4e8, #00c2ff);
+  color: white;
+  overflow-x: hidden;
 }
 
 
 
+
+
+
+/* HEADER */
 
 .burger {
     font-size: 30px;
     cursor: pointer;
     padding: 15px;
     position: fixed;
-    top: 10px;
+    top: -4px;
     right: 10px;
     z-index: 1000;
-    background-color: #333;
     color: #fff;
     border-radius: 5px;
     user-select: none;
   }
 
-  
+  /* Само меню */
   .menu {
     position: fixed;
     top: 0;
-    right: -200px; 
+    right: -200px; /* изначально за экраном */
     width: 200px;
-    height: 100vh;
-    background-color: #333;
     box-shadow: -2px 0 5px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column;
@@ -48,6 +56,7 @@ body {
     background-color: #555;
   }
 
+  /* Класс, который открывает меню */
   .menu.open {
     right: 0;
     z-index: 3;
@@ -118,12 +127,15 @@ body {
   color: white;
   cursor: pointer;
 }
- 
+
+
+
+/* HERO SECTION */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 330px 80px;
+  padding: 60px 80px;
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(0deg, #02a7ec 0%, #45c6fc 100%);
@@ -135,11 +147,13 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 80px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
   color: white;
+margin-left: 154px;
+    margin-top: -128px;
 }
 
 .hero-text p {
@@ -147,6 +161,7 @@ body {
   line-height: 1.6;
   margin-bottom: 30px;
    color: white;
+  margin-left: 156px;
 }
 
 .read-more {
@@ -159,15 +174,19 @@ body {
   font-weight: bold;
   transition: 0.3s;
   animation: pulse 2.5s infinite;
+  margin-left: 163px;
 }
 
-.read-more:hover {
+.btn:hover {
   background: white;
   color: #009cde;
 }
 
+/* ARROWS */
 .arrows {
-  margin-top: 40px;
+  
+margin-left: -10px;
+    margin-top: -208px;
 }
 
 .circle-btn {
@@ -175,7 +194,7 @@ body {
   height: 45px;
   border: none;
   border-radius: 50%;
-  margin: 0 8px;
+  margin: 4PX 8px;
   cursor: pointer;
   background: white;
   color: #009cde;
@@ -189,16 +208,19 @@ body {
   transform: scale(1.2);
 }
 
+/* HERO IMAGE */
 .hero-image {
   position: relative;
 }
 
 .hero-image img {
+  max-width: 588px;
   border-radius: 10px;
   position: relative;
   z-index: 2;
 }
 
+/* BACKGROUND BIG CIRCLE */
 .image-bg {
   position: absolute;
   top: -748px;
@@ -221,6 +243,8 @@ body {
   0% { transform: translateY(0) scale(1); }
   100% { transform: translateY(-20px) scale(1.05); }
 }
+
 .hidden-text {
   display: none;
 }
+
