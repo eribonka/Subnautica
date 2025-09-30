@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Subnautica/style.css">
 </head>
 <body>
 <nav class="navbar">
- 
+
     <div class="logo">
-     <i class="fas fa-tv"> <img src="../Subnautica/image/software.png" alt="" width="80px" height="70px">Potoub</i>
-     
+      <i class="fas fa-tv"></i> Potoub
+      
   </div>
 </header>
 
 
     </div>
- 
+
+
     <div class="image-bg">
-      <img src="../tnt/Rectangle 4.png">
+      <img src="../Subnautica/image/Rectangle 4.png" width="" h>
     </div>
     <div class="navbar-center"></div>
     <div class="navbar-right">
@@ -28,17 +29,18 @@
     </div>
     <div class="burger" id="burgerBtn">☰</div>
     <div class="menu" id="menu">
-  <a href="../index.html">Home</a>
-  <a href="../Subnautica/about/indexone.html">About</a>
-  <a href="../Subnautica/howits/index2.html">Work</a>
-  <a href="../Subnautica/contact/indexcontact.html">Contact</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Work</a>
+  <a href="#">Contact</a>
     <script>
   const burger = document.getElementById('burgerBtn');
   const menu = document.getElementById('menu');
- 
+
   burger.addEventListener('click', () => {
     menu.classList.toggle('open');
   });
+
  
   window.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !burger.contains(e.target)) {
@@ -52,20 +54,79 @@
   <section class="hero">
   <div class="hero-text">
     <h1 id="heroTitle">Get<br>Thinking<br>A long time</h1>
-    <p id="heroParagraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+    <p id="manoParagrafas" style="min-height:70px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. 
+      <span id="papildomasTekstas" class="hidden-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi ipsam dignissimos explicabo excepturi nulla at molestias harum totam earum, amet placeat voluptatum eveniet molestiae qui id aut pariatur ipsum?
+      </span>
+
     </p>
-    <button class="btn" id="readMoreBtn">Read More</button>
- 
+    <button onclick="pridetiTeksta()" id="mygtukas" class="read-more">Read More</button>
+
     <div class="arrows">
       <button class="circle-btn" id="prevBtn">&larr;</button>
       <button class="circle-btn" id="nextBtn">&rarr;</button>
     </div>
   </div>
- 
+
   <div class="hero-image">
-    <img src="../tnt/header photo.png" alt="illustration" id="heroImage">
+    <img src="../Subnautica/image/header photo.png" alt="illustration" id="heroImage">
   </div>
-</section
+</section>
+
+<script>
+  
+  
+  const slides = [
+    {
+      title: "Get<br>Thinking<br>A long time",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+      title: "Learn<br>Build<br>Improve",
+      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      title: "Code<br>Test<br>Deploy",
+      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  
+    }
+  ];
+
+  let currentSlide = 0;
+  const heroTitle = document.getElementById("heroTitle");
+  const heroParagraph = document.getElementById("heroParagraph");
+  const heroImage = document.getElementById("heroImage");
+
+  function updateSlide() {
+    heroTitle.innerHTML = slides[currentSlide].title;
+    heroParagraph.textContent = slides[currentSlide].text;
+  }
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlide();
+  });
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide();
+  });
+
+  
+   function pridetiTeksta() {
+      const papildomas = document.getElementById("papildomasTekstas");
+      const mygtukas = document.getElementById("mygtukas");
+ 
+      if (papildomas.classList.contains("hidden-text")) {
+        papildomas.classList.remove("hidden-text");
+        mygtukas.textContent = "Show less";
+      } else {
+        papildomas.classList.add("hidden-text");
+        mygtukas.textContent = "Read more";
+      }
+    }
+</script>
+</section>
 </body>
 </html>
