@@ -39,7 +39,6 @@
     menu.classList.toggle('open');
   });
  
-  // Закрытие меню при клике вне его
   window.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !burger.contains(e.target)) {
       menu.classList.remove('open');
