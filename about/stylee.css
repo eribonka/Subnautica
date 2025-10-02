@@ -19,7 +19,7 @@ body {
 .image {
   
   height: 550px;
-  width: 550px;
+  width: 700px;
   margin-top: 100px;
 }
 
@@ -111,6 +111,8 @@ display: flex;
     flex-grow: 1;
     padding: 20px;
     position: relative;
+    min-width: 550px;
+    max-width: 200px;
   }
   .content h3 {
     color: #2e82d7;
@@ -178,7 +180,7 @@ display: flex;
     footer {
     background-color: #333;
     color: white;
-    padding: 80px 50px;
+    padding: 80px 311px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -208,6 +210,7 @@ footer button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 footer .footer-address, footer .footer-links, footer .footer-follow, footer .footer-newsletter {
@@ -224,4 +227,7 @@ footer p {
     text-align: center;
     padding: 20px;
     color: #fff;
+}
+a {
+  margin: 1px;
 }
