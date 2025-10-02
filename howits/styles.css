@@ -81,7 +81,7 @@ display: inline-block;
     footer {
     background-color: #333;
     color: white;
-    padding: 80px 50px;
+    padding: 80px 300px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

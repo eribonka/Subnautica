@@ -11,13 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
-
-
-
-/* HEADER */
-
 .burger {
     font-size: 30px;
     cursor: pointer;
@@ -31,11 +24,11 @@ body {
     user-select: none;
   }
 
-  /* Само меню */
+  
   .menu {
     position: fixed;
     top: 0;
-    right: -200px; /* изначально за экраном */
+    right: -200px; 
     width: 200px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.2);
     display: flex;
@@ -56,7 +49,6 @@ body {
     background-color: #555;
   }
 
-  /* Класс, который открывает меню */
   .menu.open {
     right: 0;
     z-index: 3;
@@ -68,11 +60,10 @@ body {
 
 .navbar {
   width: 100%;
-  background: #45c6fc;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
+  padding: 30px 40px;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -128,17 +119,13 @@ body {
   cursor: pointer;
 }
 
-
-
-/* HERO SECTION */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 80px;
+  padding: 300px 80px;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(0deg, #02a7ec 0%, #45c6fc 100%);
 }
 
 .hero-text {
@@ -147,7 +134,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 56px;
+  font-size: 90px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -182,7 +169,6 @@ margin-left: 154px;
   color: #009cde;
 }
 
-/* ARROWS */
 .arrows {
   
 margin-left: -10px;
@@ -202,13 +188,13 @@ margin-left: -10px;
   font-weight: bold;
   transition: 0.3s;
   animation: pulse 3s infinite;
+  margin-top: 20px;
 }
 
 .circle-btn:hover {
   transform: scale(1.2);
 }
 
-/* HERO IMAGE */
 .hero-image {
   position: relative;
 }
@@ -220,7 +206,7 @@ margin-left: -10px;
   z-index: 2;
 }
 
-/* BACKGROUND BIG CIRCLE */
+
 .image-bg {
   position: absolute;
   top: -748px;
@@ -231,8 +217,6 @@ margin-left: -10px;
 
   z-index: 2;
 }
-
-/* ANIMATIONS */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.08); }
