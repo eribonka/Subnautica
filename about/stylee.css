@@ -232,10 +232,6 @@ a {
   margin: 1px;
 }
 
-
-
-
-
 .burger {
     font-size: 30px;
     cursor: pointer;
@@ -281,4 +277,34 @@ a {
 
 .burger {
   font-size: 29px;
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+  }
+  p {
+flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .image {
+   height: 300px;
+   width: 500px;
+  }
+  .content {
+    flex-direction: column;
+    width: 100px;
+  }
+  .tabs {
+    
+  }
+  .content p {
+   
+  }
+  .backround {
+    flex-direction: column;
+  }
 }
