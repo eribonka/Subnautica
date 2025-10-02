@@ -231,3 +231,54 @@ footer p {
 a {
   margin: 1px;
 }
+
+
+
+
+
+.burger {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: -4px;
+    right: 10px;
+    z-index: 1000;
+    color: #fff;
+    border-radius: 5px;
+    user-select: none;
+  }
+
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -200px; 
+    width: 200px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    transition: background 0.2s;
+  }
+
+  .menu a:hover {
+    background-color: #555;
+  }
+
+  .menu.open {
+    right: 0;
+    z-index: 3;
+  }
+
+.burger {
+  font-size: 29px;
+}
