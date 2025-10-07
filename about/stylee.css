@@ -19,7 +19,7 @@ body {
 .image {
   
   height: 550px;
-  width: 550px;
+  width: 700px;
   margin-top: 100px;
 }
 
@@ -111,6 +111,8 @@ display: flex;
     flex-grow: 1;
     padding: 20px;
     position: relative;
+    min-width: 550px;
+    max-width: 200px;
   }
   .content h3 {
     color: #2e82d7;
@@ -178,7 +180,7 @@ display: flex;
     footer {
     background-color: #333;
     color: white;
-    padding: 80px 50px;
+    padding: 80px 311px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -208,6 +210,7 @@ footer button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 footer .footer-address, footer .footer-links, footer .footer-follow, footer .footer-newsletter {
@@ -224,4 +227,84 @@ footer p {
     text-align: center;
     padding: 20px;
     color: #fff;
+}
+a {
+  margin: 1px;
+}
+
+.burger {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: -4px;
+    right: 10px;
+    z-index: 1000;
+    color: #fff;
+    border-radius: 5px;
+    user-select: none;
+  }
+
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -200px; 
+    width: 200px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    transition: background 0.2s;
+  }
+
+  .menu a:hover {
+    background-color: #555;
+  }
+
+  .menu.open {
+    right: 0;
+    z-index: 3;
+  }
+
+.burger {
+  font-size: 29px;
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+  }
+  p {
+flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .image {
+   height: 300px;
+   width: 500px;
+  }
+  .content {
+    flex-direction: column;
+    width: 100px;
+  }
+  .tabs {
+    
+  }
+  .content p {
+   
+  }
+  .backround {
+    flex-direction: column;
+  }
 }
