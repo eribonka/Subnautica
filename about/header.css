@@ -3,7 +3,7 @@
     cursor: pointer;
     padding: 15px;
     position: fixed;
-    top: 30px;
+    top: 15px;
     right: 10px;
     z-index: 1000;
     color: #fff;
@@ -71,6 +71,7 @@ ease;
  
 .navbar .logo img {
   width: 30px;
+  height: 40px;
   margin-right: 10px;
 }
  
@@ -109,4 +110,16 @@ ease;
   color: white;
   cursor: pointer;
 }
- 
+ @media (max-width: 800px) {
+ .burger{
+  font-size: 30px;
+  top: 10px;
+ }
+ .navbar
+{
+  padding: 30px 15px;
+}
+.btn-download{
+  padding: 6px 6px;
+}
+ }
