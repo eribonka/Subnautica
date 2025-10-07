@@ -42,7 +42,7 @@ p {
 
 .read-more {
     display: inline-block;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border: 4px solid #34b6ff;
     border-radius: 30px;
     color: #333;
@@ -177,6 +177,10 @@ display: flex;
       color: #333;
       line-height: 1.6;
     }
+
+    .manoParagrafas{
+      min-width: 365px;
+    }
     footer {
     background-color: #333;
     color: white;
@@ -278,10 +282,21 @@ a {
 .burger {
   font-size: 29px;
 }
+@media (max-width:1130px){
+  .image {
+    height:200px ;
+    width: 300px;
+    margin-top: 100px;
+  }
+    .about-section{
+    padding-top: 200px;
+    }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .about-section {
     flex-direction: column;
+    padding: 13% 10%;
   }
   p {
 flex-direction: column;
@@ -291,8 +306,8 @@ flex-direction: column;
     padding: 20px 40px;
   }
   .image {
-   height: 300px;
-   width: 500px;
+   height: 200px;
+   width: 300px;
   }
   .content {
     flex-direction: column;
@@ -307,4 +322,17 @@ flex-direction: column;
   .backround {
     flex-direction: column;
   }
+  
+}
+@media (max-width:1550px){
+  .read-more{
+    margin-left: 0px;
+  }
+  
+}
+@media (max-width:900px){
+ .content{
+    min-width: 300px;
+  }
+  .tabs {width:50px}
 }
