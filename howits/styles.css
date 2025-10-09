@@ -64,7 +64,7 @@ body {
 }
 .mygtukas{
 display: inline-block;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border: 2px solid #34b6ff;
     border-radius: 30px;
     color: #333;
@@ -120,5 +120,28 @@ footer .footer-address, footer .footer-links, footer .footer-follow, footer .foo
 
 footer p {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 
 }
+@media ( max-width: 800px){
+  footer{
+    padding: 80px 10px;
+
+  }
+  .how-it-works{
+    padding: 60px 0%;
+  }
+  .content h2{
+    font-size: 2rem;
+  }
+  footer button{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:640px){
+.image img {
+  min-width: 200px;
+  min-height: 200px;
+}
+}
+
