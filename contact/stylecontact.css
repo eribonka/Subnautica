@@ -28,6 +28,9 @@ body {
 	position: relative;
 	max-width: 100%;
 }
+ul{
+      margin-left: -20px;
+    }
 
 .textinput {
 	font-size: 20px;
@@ -91,7 +94,7 @@ body {
 footer {
     background-color: #333;
     color: white;
-    padding: 80px 50px;
+    padding: 80px 313px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -194,10 +197,17 @@ ease;
 .burger {
   font-size: 29px;
 }
+
+@media (max-width: 1400px) {
+    
+}
  @media (max-width: 1100px) {
     iframe{
         width: 300px;
         height: 300px;
+    }
+    footer{
+        padding: 80px 50px;
     }
  }
 @media (max-width: 800px) {

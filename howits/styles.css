@@ -28,7 +28,9 @@ body {
 .content h2 span {
   color: #2196f3;
 }
-
+ul{
+      margin-left: -20px;
+    }
 .content p {
   color: #444;
   font-size: 14px;
@@ -77,6 +79,11 @@ display: inline-block;
     .hidden-text {
       display: none;
     }
+    .end{
+    background-color: #0099cc;
+    text-align: center;
+    padding: 20px;
+    }
 
     footer {
     background-color: #333;
@@ -120,8 +127,9 @@ footer .footer-address, footer .footer-links, footer .footer-follow, footer .foo
 
 footer p {
     text-align: left;
-    margin-top: 
+    margin-top: 0px;
 }
+
 @media ( max-width: 800px){
   footer{
     padding: 80px 10px;

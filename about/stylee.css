@@ -181,6 +181,9 @@ display: flex;
     .manoParagrafas{
       min-width: 365px;
     }
+    ul{
+      margin-left: -20px;
+    }
     footer {
     background-color: #333;
     color: white;
